@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox
+        id="AnchorPane"
+        prefHeight="100"
+        prefWidth="400"
+        xmlns:fx="http://javafx.com/fxml/1"
+        xmlns="http://javafx.com/javafx/8.0.40"
+        fx:controller="main.AddController">
+
+    <padding><Insets top="25" right="25" bottom="10" left="25"/></padding>
+
+    <TextField
+        fx:id="text_field"/>
+
+    <HBox>
+
+        <Button text="Agregar"
+                onAction="#handleSubmitButtonAction"/>
+
+        <Button text="Cancelar"
+                onAction="#handleCancelButtonAction"/>
+
+    </HBox>
+
+</VBox>
+

@@ -1,0 +1,15 @@
+Country 0: Ciudad de Mexico
+Country 1: Panama
+Country 2: La Habana
+Country 3: San Diego
+Country 4: Tokio
+Country 5: Madrid
+Country 6: Lima
+Country 7: Buenos Aires
+Country 8: Sao Paulo
+Country 9: Caracas
+Country 10: Bogota
+Country 11: Santo Domingo
+Country 12: Shangai
+Country 13: Quito
+Country 14: Santiago

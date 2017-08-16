@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<!-- Vertical box to contain the menu bar, as well as the text area.
+   - An initial size of 600 x 400 is provided
+   -->
+<VBox
+        xmlns:fx="http://javafx.com/fxml/1"
+        xmlns="http://javafx.com/javafx/8.0.40"
+        fx:controller="main.MainController"
+        fx:id="vbox"
+        id="VBox"
+        prefHeight="600"
+        prefWidth="400">
+
+    <!-- menu bar to hold the menu.
+       - traversable through methods such as the tab is enabled
+       -->
+    <MenuBar
+            fx:id="menu_bar"
+            focusTraversable="true">
+
+        <!-- Enable a custom shortcut, disable automatic shortcut creation,
+             - & set a specific action for being selected.
+             -->
+        <Menu text="Estructura de Datos">
+
+            <MenuItem
+                    fx:id="about"
+                    mnemonicParsing="false"
+                    onAction="#handleAboutAction"
+                    text="Acerca de"/>
+
+            <SeparatorMenuItem/>
+
+            <MenuItem
+                    fx:id="exit"
+                    accelerator="Shortcut+Q"
+                    mnemonicParsing="false"
+                    onAction="#handleExitAction"
+                    text="Salir"/>
+
+        </Menu>
+
+        <Menu text="Archivo">
+
+            <MenuItem
+                    fx:id="create"
+                    accelerator="Shortcut+N"
+                    mnemonicParsing="false"
+                    onAction="#handleNewAction"
+                    text="Nuevo"/>
+
+            <MenuItem
+                    fx:id="open"
+                    accelerator="Shortcut+O"
+                    mnemonicParsing="false"
+                    onAction="#handleOpenAction"
+                    text="Abrir"/>
+
+            <MenuItem
+                    fx:id="save"
+                    accelerator="Shortcut+S"
+                    disable="true"
+                    mnemonicParsing="false"
+                    onAction="#handleSaveAction"
+                    text="Guardar"/>
+
+        </Menu>
+
+        <Menu text="Edicion">
+
+
+            <MenuItem
+                    fx:id="visibility"
+                    accelerator="Shortcut+H"
+                    mnemonicParsing="false"
+                    onAction="#handleShowAction"
+                    text="Ocultar Datos"/>
+
+            <MenuItem
+                    fx:id="insert"
+                    accelerator="Shortcut+I"
+                    disable="true"
+                    mnemonicParsing="false"
+                    onAction="#handleInsertAction"
+                    text="Insertar Dato"/>
+
+            <MenuItem
+                    fx:id="order"
+                    accelerator="Shortcut+D"
+                    disable="true"
+                    mnemonicParsing="false"
+                    onAction="#handleOrderAction"
+                    text="Ordenar Datos"/>
+
+            <MenuItem
+                    fx:id="erase"
+                    accelerator="Shortcut+F"
+                    disable="true"
+                    mnemonicParsing="false"
+                    onAction="#handleEraseAction"
+                    text="Eliminar Datos"/>
+
+            <MenuItem
+                    fx:id="eraseAll"
+                    accelerator="Shortcut+Shift+F"
+                    disable="true"
+                    mnemonicParsing="false"
+                    onAction="#handleEraseAction"
+                    text="Eliminar Todo"/>
+        </Menu>
+
+    </MenuBar>
+
+    <!-- text area to act as the array display.
+       - the text area grows with the container,
+       - and adds a scroll bar on the left side.
+       -->
+    <TextArea
+            fx:id="text_area"
+            editable="false"
+            scrollLeft="Infinity"
+            VBox.vgrow="ALWAYS"/>
+
+</VBox>
+

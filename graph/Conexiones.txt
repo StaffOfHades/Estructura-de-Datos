@@ -1,0 +1,27 @@
+Ciudad de Mexico, Panama, 7000
+Ciudad de Mexico, La Habana, 4600
+Ciudad de Mexico, San Diego, 3300
+Ciudad de Mexico, Tokio,  14700
+Ciudad de Mexico, Madrid, 10700
+Panama, Lima, 11300
+Panama, Buenos Aires, 20000
+Panama, Sao Paulo, 23000
+Panama, Caracas, 8700
+Bogota, Caracas, 6600
+Bogota, Ciudad de Mexico, 3500
+La Habana, Santo Domingo, 6400
+San Diego, La Habana, 9400
+San Diego, Shangai, 14800
+Tokio, Madrid, 14600
+Madrid, Lima, 8900
+Lima, Quito, 6300
+Lima, Santiago, 4000
+Lima, Ciudad de Mexico, 5800
+Buenos Aires, Lima, 14400
+Sao Paulo, Buenos Aires, 5000
+Caracas, Santo Domingo, 6300
+Santo Domingo, Bogota, 8500
+Santo Domingo, San Diego, 11000
+Shangai, Tokio, 6800
+Quito, Santiago, 7700
+Santiago, Buenos Aires, 3500

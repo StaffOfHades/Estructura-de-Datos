@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<!-- Vertical box to contain the menu bar, as well as the text area.
+   - An initial size of 600 x 400 is provided
+   -->
+<VBox
+        xmlns:fx="http://javafx.com/fxml/1"
+        xmlns="http://javafx.com/javafx/8.0.40"
+        fx:controller="main.MainController"
+        fx:id="vbox"
+        id="VBox"
+        prefHeight="600"
+        prefWidth="400">
+
+    <!-- menu bar to hold the menu.
+       - traversable through methods such as the tab is enabled
+       -->
+    <MenuBar
+            fx:id="menu_bar"
+            focusTraversable="true">
+
+        <Menu text="Acciones">
+
+            <!-- Enable a custom shortcut, disable automatic shortcut creation,
+               - & set a specific action for being selected.
+               -->
+            <MenuItem
+                    accelerator="Shortcut+I"
+                    mnemonicParsing="false"
+                    onAction="#handleInsertAction"
+                    text="Insertar Dato"/>
+
+            <MenuItem
+                    accelerator="Shortcut+O"
+                    mnemonicParsing="false"
+                    onAction="#handleOpenAction"
+                    text="Insertar de Archivo"/>
+
+            <MenuItem
+                    accelerator="Shortcut+D"
+                    mnemonicParsing="false"
+                    onAction="#handleOrderAction"
+                    text="Ordenar Datos"/>
+
+            <MenuItem
+                    accelerator="Shortcut+F"
+                    mnemonicParsing="false"
+                    onAction="#handleEraseAction"
+                    text="Eliminar Datos"/>
+
+            <MenuItem
+                    accelerator="Shortcut+S"
+                    mnemonicParsing="false"
+                    onAction="#handleShowAction"
+                    text="Ocultar Datos"/>
+
+            <SeparatorMenuItem/>
+
+            <MenuItem
+                    accelerator="Shortcut+Q"
+                    mnemonicParsing="false"
+                    onAction="#handleExitAction"
+                    text="Salir"/>
+        </Menu>
+
+    </MenuBar>
+
+    <!-- text area to act as the array display.
+       - the text area grows with the container,
+       - and adds a scroll bar on the left side.
+       -->
+    <TextArea
+            fx:id="text_area"
+            editable="false"
+            scrollLeft="Infinity"
+            VBox.vgrow="ALWAYS"/>
+
+</VBox>
+
